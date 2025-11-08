@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Courses - Chris Gate Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Base */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{line-height:1.6;color:#333;background:#f9f9f9;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+
+/* Header */
+header{background:#1e1e1e;color:#fff;}
+.navbar{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 30px;}
+.navbar .logo{font-size:1.8rem;font-weight:bold;}
+.nav-links{display:flex;gap:25px;}
+.nav-links li a{color:#fff;font-weight:500;padding:5px;}
+.nav-links li a.active, .nav-links li a:hover{border-bottom:2px solid #00bfff;}
+
+/* Hero / Page Intro */
+.page-header{background:#00bfff;color:#fff;text-align:center;padding:60px 30px;position:relative;}
+.page-header h1{font-size:2.5rem;margin-bottom:15px;}
+.page-header p{font-size:1.2rem;}
+
+/* Courses Table */
+main{max-width:1000px;margin:auto;padding:50px 30px;}
+table{width:100%;border-collapse:collapse;box-shadow:0 6px 15px rgba(0,0,0,0.1);}
+th, td{padding:15px;text-align:left;border-bottom:1px solid #ccc;}
+th{background:#00bfff;color:#fff;}
+tr:hover{background:#f0f8ff;}
+td a.btn{padding:8px 15px;background:#00bfff;color:#fff;border-radius:5px;display:inline-block;transition:0.3s;}
+td a.btn:hover{background:#009acd;transform:scale(1.05);}
+
+/* Footer */
+footer{background:#1e1e1e;color:#fff;padding:20px 30px;text-align:center;margin-top:50px;}
+footer p{margin-bottom:10px;}
+.socials{display:flex;justify-content:center;gap:15px;}
+.socials li a{color:#00bfff;transition:0.3s;}
+.socials li a:hover{color:#009acd;}
+
+/* Responsive */
+@media(max-width:768px){.page-header h1{font-size:2rem;}}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Chris Gate Academy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="all-courses.html" class="active">All Courses</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Page Intro -->
+<section class="page-header">
+    <h1>All Courses & Tuition Fees</h1>
+    <p>Check all the courses offered at Chris Gate Academy, their tuition fees, and payment duration options.</p>
+</section>
+
+<!-- Courses Table -->
+<main>
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Tuition Fee</th>
+            <th>Payment Duration</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>$300</td>
+            <td>Monthly / Full Payment</td>
+            <td><a href="payment.html" class="btn">Enroll Now</a></td>
+        </tr>
+        <tr>
+            <td>Python Programming</td>
+            <td>$350</td>
+            <td>Monthly / Full Payment</td>
+            <td><a href="payment.html" class="btn">Enroll Now</a></td>
+        </tr>
+        <tr>
+            <td>Data Science</td>
+            <td>$400</td>
+            <td>Monthly / Full Payment</td>
+            <td><a href="payment.html" class="btn">Enroll Now</a></td>
+        </tr>
+        <tr>
+            <td>Cyber Security</td>
+            <td>$450</td>
+            <td>Monthly / Full Payment</td>
+            <td><a href="payment.html" class="btn">Enroll Now</a></td>
+        </tr>
+        <tr>
+            <td>UI/UX Design</td>
+            <td>$300</td>
+            <td>Monthly / Full Payment</td>
+            <td><a href="payment.html" class="btn">Enroll Now</a></td>
+        </tr>
+    </table>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Chris Gate Academy. All rights reserved.</p>
+    <ul class="socials">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
